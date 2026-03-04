@@ -37,5 +37,9 @@ ollama run llama3.1
 
 ollama run nomic-embed-text 'hello world'
 
+chorma is depricated now i am going to use faiss 
+
+pip install -qU langchain-community faiss-cpu
+
 
 
