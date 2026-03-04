@@ -1,0 +1,41 @@
+
+Installing the local llm
+
+https://ollama.com/download/windows 1GB
+
+download llm locally and embedding model
+https://ollama.com/library/llama3.1 5gb
+ollama pull llama3.1
+llm above
+
+https://ollama.com/library/nomic-embed-text
+
+text to vector engine  above 274 MB 
+
+what is embedding ?
+https://developers.openai.com/api/docs/guides/embeddings
+
+
+chromaDB
+https://github.com/chroma-core/chroma?tab=readme-ov-file
+pip install chromaDB
+
+create virtual env
+
+python -m venv env
+
+inside scripts folder run activate file
+
+
+verifying the llm and nomic embedding
+
+langchain 
+https://github.com/langchain-ai/langchain
+
+
+ollama run llama3.1
+
+ollama run nomic-embed-text 'hello world'
+
+
+
