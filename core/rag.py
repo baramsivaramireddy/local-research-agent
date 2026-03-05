@@ -37,7 +37,11 @@ def create_db(text):
 def retrieve(db,query):
     return db.similarity_search(query,k=5)
 
-
+def save_db(db, path="faiss_index"):
+    db.save_local(path)
+    
+def load_db(path="faiss_index"):
+    return FAISS.load_local(path, embeddings, allow_dangerous_deserialization=True)
 if __name__ == '__main__':
     text = '''
     Use LangChain for:
@@ -52,7 +56,7 @@ LangChain ecosystem
 '''
 
     db = create_db(text)
-    
+    save_db(db)
     results = retrieve(db, 'use of langchain')
     
     for r in results:
